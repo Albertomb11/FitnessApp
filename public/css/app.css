@@ -1,0 +1,35 @@
+body{
+    padding-top: 70px;
+    background-color: whitesmoke;
+}
+
+a {
+    color: #000;
+}
+
+div.img{
+    display:table;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+div.img img{
+    margin:0;
+    padding:0;
+    width: 250px;
+    height: 150px;
+}
+div.img span{
+    line-height:normal;
+    font-size:30px;
+    display:table-caption;
+    margin:0;
+    background: whitesmoke;
+    color: black;
+    padding:5px;
+    text-align:center;
+}
+
+img.logo {
+    width: 250px;
+    height: 150px;
+}

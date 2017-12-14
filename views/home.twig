@@ -1,0 +1,24 @@
+{% extends 'layout.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.6/sweetalert2.min.css" />
+{% endblock %}
+
+{% block content %}
+<div class="container">
+
+    <h1>Ejercicios Fitness</h1>
+
+    <div class="fitness">
+        {% for categoria in categorias %}
+        <a href="fitness/{{ categoria.Id }}">
+            <div class="col-sm-3 col-md-3 img">
+                <img class="logo" src="{{ categoria.Imagen }}" alt="No se ha podido encontrar la imagen de {{ categoria.Grupo_muscular }}"/>
+                <span>{{ categoria.Grupo_muscular }}</span>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+
+</div>
+{% endblock %}
