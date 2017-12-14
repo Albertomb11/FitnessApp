@@ -18,6 +18,11 @@ class HomeController {
         return $categoria->getIndex();
     }
 
+    /**
+     * Ruta todavia por implementar
+     *
+     * @return string Render de la pagina
+     */
     public function getContacto(){
         return 'Información de contacto';
     }
