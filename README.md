@@ -3,7 +3,7 @@ Configurar el archivo .env.example con tus datos de acceso a la base de datos.
 Renombrar el **.env.example** a **.env**
 
 ## Cargar la base de datos
-Debes importar en tu servidor de bases de datos el archivo **.sql** que hay dentro de la carpeta **SQL** para cargar la base de datos correspondiente a esta aplicacion.
+Debes importar en tu servidor de bases de datos el archivo **fitnessapp.sql** para cargar la base de datos correspondiente a esta aplicacion.
 
 ##Guia de uso de la aplicacion
 1. Para ir a la página de inicio debes pulsar el enlace **Fitness APP** que esta en el menu de navegación.
