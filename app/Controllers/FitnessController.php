@@ -268,19 +268,12 @@ class FitnessController extends BaseController{
             $errors = $validator->getMessages();
         }
 
-//        $webInfo = [
-//            'title' => 'Página de Fitness - FitnessAPP'
-//        ];
-
         $fitness = Fitness::find($id);
         $comments = Comment::all();
         $webInfo = [
             'title' => 'Página de Fitness - FitnessAPP'
         ];
 
-//        if( !$fitness ){
-//            return $this->render('404.twig', ['webInfo' => $webInfo]);
-//        }
 
         return $this->render('fitness.twig', [
             'errors'    => $errors,
