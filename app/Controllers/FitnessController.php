@@ -249,7 +249,7 @@ class FitnessController extends BaseController{
         $validator->add('name:Nombre','minlength', ['min' => 5], 'El {label} debe tener al menos 5 caracteres');
         $validator->add('email:Email','required', [], 'El {label} no es válido');
         $validator->add('email:Email','required', [], 'El {label} es necesario para comentar');
-        $validator->add('comment:Comentario', 'required', [], 'Aunque los silencios a veces dicen mucho no se permiten comentarios vacíos');
+        $validator->add('comment:Comentario', 'required', [], 'El comentario no puede estar vacio');
 
         if($validator->validate($_POST)){
             $comment = new Comment();
@@ -268,9 +268,9 @@ class FitnessController extends BaseController{
             $errors = $validator->getMessages();
         }
 
-        $webInfo = [
-            'title' => 'Página de Fitness - FitnessAPP'
-        ];
+//        $webInfo = [
+//            'title' => 'Página de Fitness - FitnessAPP'
+//        ];
 
         $fitness = Fitness::find($id);
         $comments = Comment::all();
@@ -278,9 +278,9 @@ class FitnessController extends BaseController{
             'title' => 'Página de Fitness - FitnessAPP'
         ];
 
-        if( !$fitness ){
-            return $this->render('404.twig', ['webInfo' => $webInfo]);
-        }
+//        if( !$fitness ){
+//            return $this->render('404.twig', ['webInfo' => $webInfo]);
+//        }
 
         return $this->render('fitness.twig', [
             'errors'    => $errors,
