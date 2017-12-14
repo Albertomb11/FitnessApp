@@ -32,6 +32,7 @@ Debes importar en tu servidor de bases de datos el archivo **fitnessapp.sql** pa
     
     
 ##Próximos parches
+
 En la version **2.0** Podremos añadir mas grupos musculares que apareceran en la página de inicio de la aplicación.
 
 Podremos tener una vista detallada de cada ejercicio con mas información. (Ahora solo tenemos la informacion detalla en la pagina del grupo muscular.)
