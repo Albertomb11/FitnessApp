@@ -79,4 +79,16 @@ class HomeController {
 
         return $auth->getLogout();
     }
+
+    public function getInvitacion(){
+        $invitacion = new AuthController();
+
+        return $invitacion->getInvitacion();
+    }
+
+    public function postInvitacion(){
+        $invitacion = new AuthController();
+
+        return $invitacion->postInvitacion();
+    }
 }
